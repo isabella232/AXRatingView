@@ -182,7 +182,7 @@
   _markImage = [self markImage];
   CGFloat markWidth = _markImage.size.width;
   CGFloat markHalfWidth = markWidth / 2;
-  CGFloat markHeight = _markImage.size.height;
+  CGFloat markHeight = CGRectGetHeight(self.bounds); //  _markImage.size.height;
   CGFloat markHalfHeight = markHeight / 2;
   
   CALayer *starMaskLayer = [CALayer layer];
